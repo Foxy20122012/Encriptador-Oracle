@@ -1,3 +1,38 @@
-body{
-  background-color: azure;
+*{
+    margin: 0;
+    padding: 0;
 }
+
+.contenedor{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F3F5FC;
+}
+
+.frase{
+    position: absolute;
+    width: 48%;
+    left: 17%;
+    top:30%;
+    height: 62%;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-size: small;
+    background-color: #F3F5FC;
+    line-height: 150%;
+    font-weight: 400;
+
+}
+
+.frase:focus{
+    border: none;
+}
+.frase:focus{
+    outline: none;
+}
+.frase::placeholder{
+    color: #0A3871;
+}
+
