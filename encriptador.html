@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <textarea
+            name="text"
+            class="text"
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aqui"
+            >
+
+            </textarea>
+        </div>
+    </div>
+    <div class="condiciones">
+        <p>Solo letras minusculas y sin acentos.</p>
+    </div>
+    <div class="boton">
+        <button class="btn-enc" type="button" onclick="console.log('Encriptando')">Enciptar</button>
+        <button class="btn-des" type="button" onclick="console.log('Desencriptar')">Desencriptar</button>
+    </div>
+
+    <div class="resultado">
+        <img src="img/Muñeco (1).png" id="muñeco" alt="" >
+        <div class="mensaje" id="mensaje">
+            <h3 id="titulo">Ningun mensaje fue encontrado</h3>
+            <p id="parrafo">Ingresa el texto que desea encriptar o desencriptar</p> 
+            <textarea
+            name="texto"
+            class="pantalla"
+            id="text"
+            cols="30"
+            rows="10"
+            class="pantalla"
+            >
+
+            </textarea>
+        </div>
+    </div>
+    <script src="Logica.js"></script>
+</body>
+</html>
