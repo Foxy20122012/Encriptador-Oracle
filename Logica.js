@@ -14,7 +14,7 @@ const Encrintando =()=>{
         .replace(/u/gi, "ufat");
     if (document.getElementById("frase").value.length != 0) {
         document.getElementById("frase").value = fraseCriptada;
-        document.getElementById("titulo").textContent ="Texto encriptado";
+        document.getElementById("titulo").textContent ="Texto Encriptado";
         document.getElementById("titulo").value = titulo;
         document.getElementById("parrafo").textContent =" ";
         document.getElementById("parrafo").value = parrafo;
