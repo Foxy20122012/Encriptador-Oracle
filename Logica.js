@@ -8,18 +8,20 @@ const Encrintando =()=>{
 
     const fraseCriptada = frase
         .replace(/e/gi, "enter")
-        .replace(/i/gi, "limes")
+        .replace(/i/gi, "imes")
         .replace(/a/gi, "ai")
         .replace(/o/gi, "ober")
         .replace(/u/gi, "ufat");
     if (document.getElementById("frase").value.length != 0) {
         document.getElementById("frase").value = fraseCriptada;
+        document.getElementById("titulo").textContent ="Texto encriptado";
         document.getElementById("titulo").value = titulo;
+        document.getElementById("parrafo").textContent =" ";
         document.getElementById("parrafo").value = parrafo;
         document.getElementById("muñeco").src = "https://d22k5h68hofcrd.cloudfront.net/magefan_blog/Como_cifrar_correos_y_enviar_mensajes_seguros.jpg";
     }else{
         document.getElementById("muñeco").src= "img/Muñeco (1).png";
-        alert("Debes ingresar algún texto");
+        swal("Porfa llena el campo", "Debes ingresar un texto", "warning");
     }
 
 }
@@ -38,12 +40,15 @@ const Desencriptar =()=>{
         .replace(/ufat/gi, "u");
     if (document.getElementById("frase").value.length != 0) {
         document.getElementById("frase").value = fraseDesCriptada;
+        document.getElementById("titulo").textContent ="Texto Desencriptado";
         document.getElementById("titulo").value = titulo;
+        document.getElementById("parrafo").textContent =" ";
         document.getElementById("parrafo").value = parrafo;
+        
         document.getElementById("muñeco").src = "https://elceo.com/wp-content/uploads/2020/11/smartphone.jpg";
     }else{
         document.getElementById("muñeco").src= "img/Muñeco (1).png";
-        alert("Debes ingresar algún texto");
+        swal("Porfa llena el campo", "Debes ingresar un texto", "warning");
     }
 
 }

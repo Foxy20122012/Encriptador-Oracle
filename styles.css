@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+  
 .contenedor{
     position: relative;
     width: 100vw;
@@ -14,7 +16,7 @@
     position: absolute;
     width: 48%;
     left: 17%;
-    top:30%;
+    top:1%;
     height: 62%;
     border: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
